@@ -1,7 +1,14 @@
-# Sistema de encriptación/desencriptación de texto con 8085
+# Sistema de encriptación/desencriptación de texto con el microprocesador 8085
 ## Descripción
-El proyecto consiste en un programa en ensamblador 8085 que permite encriptar y desencriptar un texto predefinido que se muestra en pantalla. Para encriptar el texto se utiliza una rutina que suma 0x07 a cada carácter ASCII. Para desencriptar se resta 0x07. El proceso se controla desde el teclado, pulsando "E" para encriptar y "D" para desencriptar.
+El proyecto consiste en un programa en ensamblador para el micriprocesador 8085 que permite encriptar y desencriptar un texto predefinido que se muestra en pantalla. Para encriptar el texto se utiliza una rutina que suma 0x07 a cada carácter ASCII. Para desencriptar se resta 0x07. El proceso se controla desde el teclado, pulsando "E" para encriptar y "D" para desencriptar.
 
+La encriptación es extremadamente importante en la actualidad para proteger la confidencialidad y privacidad de la información. Casi toda la comunicación digital hoy en día utiliza algún tipo de encriptación, desde sitios web seguros (HTTPS) hasta aplicaciones de mensajería como WhatsApp.
+
+El proyecto descrito, aunque simple, demuestra los conceptos básicos detrás de la encriptación de datos. Al aplicar una operación matemática sencilla (sumar un valor) a cada carácter, se oculta el contenido original del texto, haciéndolo ilegible para cualquiera que no tenga la clave de desencriptación (en este caso, restar el mismo valor).
+
+Esto mismo se aplica en encriptaciones más robustas y complejas usadas hoy en día. Métodos como AES, RSA, etc. utilizan claves y algoritmos mucho más avanzados, pero la idea es esencialmente la misma: aplicar una transformación reversible a los datos para ocultar su contenido.
+
+La encriptación protege la confidencialidad de información crítica como contraseñas, números de tarjetas de crédito, comunicaciones privadas, etc. Sin encriptación, muchas aplicaciones de Internet y servicios digitales no serían posibles o seguros de usar. Este proyecto sirve como un buen ejemplo didáctico de sus fundamentos.
 ## Diagrama de flujo
 El diagrama de flujo es el siguiente:
 
